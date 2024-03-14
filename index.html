@@ -30,6 +30,18 @@
                      rotation="-90 0 0"
                      gesture-handler></a-image>
         </a-marker>
+        <a-marker id="markerB"
+                  type="pattern"
+                  preset="custom"
+                  url="assets/pattern-74222.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-text value="南無阿彌陀佛"
+                    position="0 0.5 0"
+                    rotation="-90 0 0"
+                    color="red"></a-text>
+        </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 </body>
