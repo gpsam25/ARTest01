@@ -10,10 +10,13 @@
 <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false;"
              loading-screen="enabled: false;"
-             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: true;"
              id="scene"
              embedded
              gesture-detector>
+        <a-asserts>
+            <a-asset-item id="assetImg" src="assets/asset.jpg"></a-asset-item>
+        </a-asserts>
         <a-marker id="animated-markerA"
                   type="pattern"
                   preset="custom"
@@ -42,48 +45,6 @@
                      rotation="-90 0 0"
                      gesture-handler></a-image>
 
-        </a-marker>
-        <a-marker id="animated-markerC"
-                  type="pattern"
-                  preset="custom"
-                  url="assets/markerC.patt"
-                  raycaster="objects: .clickable"
-                  emitevents="true"
-                  cursor="fuse: false; rayOrigin: mouse;"
-                  id="markerC">
-            <a-image src="assets/assetC.jpg"
-                     scale="1 1 1"
-                     class="clickable"
-                     rotation="-90 0 0"
-                     gesture-handler></a-image>
-        </a-marker>
-        <a-marker id="animated-markerD"
-                  type="pattern"
-                  preset="custom"
-                  url="assets/markerD.patt"
-                  raycaster="objects: .clickable"
-                  emitevents="true"
-                  cursor="fuse: false; rayOrigin: mouse;"
-                  id="markerD">
-            <a-image src="assets/assetD.jpg"
-                     scale="1 1 1"
-                     class="clickable"
-                     rotation="-90 0 0"
-                     gesture-handler></a-image>
-        </a-marker>
-        <a-marker id="animated-markerE"
-                  type="pattern"
-                  preset="custom"
-                  url="assets/markerE.patt"
-                  raycaster="objects: .clickable"
-                  emitevents="true"
-                  cursor="fuse: false; rayOrigin: mouse;"
-                  id="markerE">
-            <a-image src="assets/assetE.jpg"
-                     scale="1 1 1"
-                     class="clickable"
-                     rotation="-90 0 0"
-                     gesture-handler></a-image>
         </a-marker>
 
         <a-entity camera></a-entity>
