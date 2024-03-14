@@ -15,28 +15,29 @@
              embedded
              gesture-detector>
         <a-asserts>
-            <a-asset-item id="assetImg" src="assets/asset.jpg" ></a-asset-item>
-            <a-asset-item id="MCat" src="assets/MCat.jpg" ></a-asset-item>
+            <a-asset-item id="assetImg" src="assets/asset.jpg"></a-asset-item>
+            <a-asset-item id="MCat" src="assets/MCat.jpg"></a-asset-item>
         </a-asserts>
         <a-marker id="markerA"
-                      type="pattern"
-                      preset="custom"
-                      url="assets/pattern-74222.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;">
+                  type="pattern"
+                  preset="custom"
+                  url="assets/pattern-74222.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
             <a-image src="#MCat"
                      scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
-        </a-marker>   
+            <a-text value="喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵"></a-text>
+        </a-marker>
         <a-marker id="markerWallet"
-                      type="pattern"
-                      preset="custom"
-                      url="assets/pattern-w.patt"
-                      raycaster="objects: .clickable"
-                      emitevents="true"
-                      cursor="fuse: false; rayOrigin: mouse;">
+                  type="pattern"
+                  preset="custom"
+                  url="assets/pattern-w.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
             <a-image src="#assetImg"
                      scale="1 1 1"
                      rotation="-90 0 0"
@@ -52,7 +53,6 @@
             <a-image src="#MCat"  scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>-->
-            <!--<a-text value="南無阿彌陀佛"></a-text>-->
         <!--</a-marker>-->
         <a-entity camera></a-entity>
     </a-scene>
