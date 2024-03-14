@@ -15,9 +15,7 @@
              embedded
              gesture-detector>
         <a-asserts>
-            <a-asset-item id="assetImg" src="assets/asset.jpg"  scale="1 1 1"
-                          rotation="-90 0 0"
-                          gesture-handler></a-asset-item>
+            <a-asset-item id="assetImg" src="assets/asset.jpg" ></a-asset-item>
         </a-asserts>
         <a-marker id="markerA"
                   type="pattern"
@@ -26,7 +24,7 @@
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
-            <a-image src="assets/asset.jpg"
+            <a-image src="#assetImg"
                      scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
