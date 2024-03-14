@@ -8,7 +8,29 @@
 </head>
 
 <body style="margin: 0; overflow: hidden;">
-    <h1>Test</h1>
-    <img src="assets/asset.jpeg" alt="" />
+    <a-scene vr-mode-ui="enabled: false;"
+             loading-screen="enabled: false;"
+             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+             id="scene"
+             embedded
+             gesture-detector>
+        <a-asserts>
+            <a-asset-item id="assetImg" src="assets/asset.jpg"></a-asset-item>
+            <a-asset-item id="MCat" src="assets/MCat.jpg"></a-asset-item>
+        </a-asserts>       
+        <a-marker id="markerWallet"
+                  type="pattern"
+                  preset="custom"
+                  url="assets/pattern-w.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="#assetImg"
+                     scale="1 1 1"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+        </a-marker>        
+        <a-entity camera></a-entity>
+    </a-scene>
 </body>
 </html>
