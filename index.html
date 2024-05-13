@@ -15,18 +15,14 @@
              id="scene"
              embedded
              gesture-detector>
-        <a-asserts>
-            <a-asset-item id="assetImg" src="assets/asset.jpg"></a-asset-item>
-            <a-asset-item id="MCat" src="assets/MCat.jpg"></a-asset-item>
-        </a-asserts>
-        <a-marker id="markerA"
+                <a-marker id="markerA"
                   type="pattern"
                   preset="custom"
-                  url="assets/pattern-74222.patt"
+                  url="assets/A.patt"
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
-            <a-image src="#MCat"
+            <a-image src="assets/assetA.jpg"
                      scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
@@ -36,11 +32,11 @@
         <a-marker id="markerWallet"
                   type="pattern"
                   preset="custom"
-                  url="assets/pattern-27022.patt"
+                  url="assets/B.patt"
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
-            <a-image src="#assetImg"
+            <a-image src="assets/assetB.jpg"
                      scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
@@ -48,11 +44,11 @@
         <a-marker id="markerGreen"
                   type="pattern"
                   preset="custom"
-                  url="assets/pattern-S__21790729.patt"
+                  url="assets/C.patt"
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
-            <a-image src="#assetImg"
+            <a-image src="assets/assetC.jpg"
                      scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
@@ -60,11 +56,23 @@
         <a-marker id="markerPanda"
                   type="pattern"
                   preset="custom"
-                  url="assets/pattern-給錢.patt"
+                  url="assets/D.patt"
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
-            <a-image src="#assetImg"
+            <a-image src="assets/assetD.jpg"
+                     scale="1 1 1"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+        </a-marker>
+         <a-marker id="markerPanda5"
+                  type="pattern"
+                  preset="custom"
+                  url="assets/E.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetE.jpg"
                      scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
