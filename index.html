@@ -3,9 +3,13 @@
 <head>
     <!--<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>-->
     <script src="js/aframe 1.0.4 .min.js"></script>
-    <script src="js/ar-js-org ar.js"></script>    
+    <script src="js/ar-js-org ar.js"></script>
     <script src="js/ar-js-org studio-backend gesture-detector.js"></script>
     <script src="js/ar-js-org studio-backend gesture-handler.js"></script>
+
+    <!--<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>-->
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <!--<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>-->
 </head>
 
 <body style="margin: 0; overflow: hidden;">
@@ -19,33 +23,163 @@
             <a-asset-item id="assetImg" src="assets/asset.jpg"></a-asset-item>
             <a-asset-item id="MCat" src="assets/MCat.jpg"></a-asset-item>
         </a-asserts>
+
         <a-marker id="markerA"
                   type="pattern"
                   preset="custom"
-                  url="assets/pattern-74222.patt"
+                  url=""assets/A.patt"
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
-            <a-image src="#MCat"
-                     scale="1 1 1"
+            <a-image src="assets/assetA.jpg"
+                     scale="2 2 2"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
-            <a-text value="喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵"
-                    position="0 0.5 -0.5"></a-text>
+      
         </a-marker>
-        <a-marker id="markerWallet"
+               <a-marker id="markerB"
                   type="pattern"
                   preset="custom"
-                  url="assets/pattern-27022.patt"
+                  url=""assets/B.patt"
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
-            <a-image src="#assetImg"
-                     scale="1 1 1"
+            <a-image src="assets/assetB.jpg"
+                     scale="2 2 2"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
+      
+              <a-marker id="markerC"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/C.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetC.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
         </a-marker>
-        <a-marker id="markerGreen"
+              <a-marker id="markerD"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/D.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetD.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>
+        <a-marker id="markerE"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/E.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetE.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>
+                <a-marker id="markerF"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/F.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetF.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>        
+                <a-marker id="markerU"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/U.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetU.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>    
+                <a-marker id="markerV"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/V.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetV.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>  
+                <a-marker id="markerW"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/W.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetW.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker> 
+                <a-marker id="markerX"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/X.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetX.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>    
+                <a-marker id="markerY"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/Y.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetY.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>    
+                <a-marker id="markerZ"
+                  type="pattern"
+                  preset="custom"
+                  url=""assets/Z.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;">
+            <a-image src="assets/assetZ.jpg"
+                     scale="2 2 2"
+                     rotation="-90 0 0"
+                     gesture-handler></a-image>
+      
+        </a-marker>           
+        <!--<a-marker id="markerGreen"
                   type="pattern"
                   preset="custom"
                   url="assets/pattern-S__21790729.patt"
@@ -68,19 +202,50 @@
                      scale="1 1 1"
                      rotation="-90 0 0"
                      gesture-handler></a-image>
-        </a-marker>
-        <!--<a-marker id="markerB"
-          type="pattern"
-          preset="custom"
-          url="assets/pattern-wallet.patt"
-          raycaster="objects: .clickable"
-          emitevents="true"
-          cursor="fuse: false; rayOrigin: mouse;">
-    <a-image src="#MCat"  scale="1 1 1"
-             rotation="-90 0 0"
-             gesture-handler></a-image>-->
-        <!--</a-marker>-->
+        </a-marker>-->
         <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
+
+<script>
+    window.onload = function () {
+
+        // 定義點擊事件處理器
+        function handleClickA() {
+            window.location.href = 'https://line.me/R/oaMessage/@981rhecr/?黑魔法項鍊';
+        }
+
+
+        function handleClickB() {
+            window.location.href = 'https://line.me/R/oaMessage/@981rhecr/?黑魔法護身符';
+        }
+
+        alert("Test version 6");
+
+        // 綁定 markerA 的事件
+        var markerA = document.querySelector("#markerA");
+        var imageA = document.querySelector("#imageA");
+
+        markerA.addEventListener("markerFound", function () {
+            imageA.addEventListener("click", handleClickA);
+        });
+
+        markerA.addEventListener("markerLost", function () {
+            imageA.removeEventListener("click", handleClickA);
+        });
+
+        // 綁定 markerB 的事件
+        var markerB = document.querySelector("#markerWallet");
+        var imageB = document.querySelector("#imageB");
+
+        markerB.addEventListener("markerFound", function () {
+            imageB.addEventListener("click", handleClickB);
+        });
+
+        markerB.addEventListener("markerLost", function () {
+            imageB.removeEventListener("click", handleClickB);
+        });
+    };
+    
+</script>
