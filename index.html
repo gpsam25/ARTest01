@@ -34,6 +34,7 @@
             <a-image id="imageA" src="assets/assetA.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>
 
@@ -47,6 +48,7 @@
             <a-image id="imageB" src="assets/assetB.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>
       
@@ -60,6 +62,7 @@
             <a-image src="assets/assetC.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>
 
@@ -73,6 +76,7 @@
             <a-image src="assets/assetD.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>
 
@@ -86,6 +90,7 @@
             <a-image src="assets/assetE.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>
 
@@ -113,6 +118,7 @@
             <a-image src="assets/assetU.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>    
 
@@ -126,6 +132,7 @@
             <a-image src="assets/assetV.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>  
 
@@ -139,6 +146,7 @@
             <a-image src="assets/assetW.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker> 
 
@@ -152,6 +160,7 @@
             <a-image src="assets/assetX.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>    
 
@@ -165,6 +174,7 @@
             <a-image src="assets/assetY.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>    
 
@@ -178,6 +188,7 @@
             <a-image src="assets/assetZ.jpg"
                      scale="2 2 2"
                      rotation="-90 0 0"
+                     class="clickable"
                      gesture-handler></a-image>
         </a-marker>           
    
@@ -188,9 +199,10 @@
 
 <script>
     window.onload = function () {
-        alert("Test version 19");
+        alert("Test version 18");
 
-        ClickToLine("#markerF", "#imageF", "黑魔法項鍊");
+        ClickToLine("#markerA", "#imageA", "黑魔法項鍊");
+        ClickToLine("#markerB", "#imageB", "黑魔法護身符");
 
     };
 
@@ -201,6 +213,7 @@
         }
 
         var marker = document.querySelector(makerObj);
+        var image = document.querySelector(imageObj);
 
         marker.addEventListener("markerFound", function () {
             image.addEventListener("click", handleClick);
